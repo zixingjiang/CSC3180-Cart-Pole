@@ -14,8 +14,8 @@ for _ in range(1000):
     # images.append(image)
     
     # Here is the core part of RL loop and gym programming
-    # 1. agent generates an action accoridng to what it may concern, such observation, reward, ...
-    # 2. the environment takes the agent's action and changes. It gives the agent a reward and updates the agent's observation
+    # 1. The agent selects an action accoridng to what it may concern, such as observation, reward, ...
+    # 2. The environment takes the action of agent and transfroms. After that, it gives the agent a reward and updates the agent's observation
     
     action = env.action_space.sample()  #<- in this case, we just select ramdon action from the angent's action space
     observation, reward, terminated, truncated, info = env.step(action) # 
