@@ -19,6 +19,12 @@ for _ in range(1000):
     
     action = env.action_space.sample()  #<- in this case, we just select ramdon action from the angent's action space
     observation, reward, terminated, truncated, info = env.step(action) # 
+    
+    #print(observation)
+    state = [0] * len(observation) 
+    for i, s in enumerate(observation):
+        print("i: ", i)
+        print("s: ", s)
 
     if terminated or truncated:
         observation, info = env.reset()
