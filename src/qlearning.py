@@ -30,6 +30,7 @@ def get_state(observation, n_buckets, state_bounds):
     return tuple(state)
 
 if __name__ == '__main__':
+    counter = 0
     env = gym.make('csc3180/CartPole_v1', render_mode='human')
     n_buckets = (1, 1, 6, 3) 
     n_actions = env.action_space.n
@@ -48,8 +49,13 @@ if __name__ == '__main__':
         lr = get_lr(i_episode)
 
         observation = env.reset() 
+        env.set_i_episode(i_episode)
         rewards = 0 
         state = get_state(observation, n_buckets, state_bounds) 
+        
+        if counter == 5:
+            env.change_poleLength(0.75)
+        
         for t in range(500):
             env.render()
 
@@ -70,10 +76,12 @@ if __name__ == '__main__':
 
             if terminated:
                 print('Episode {} finished after {} timesteps, total rewards {}'.format(i_episode, t+1, rewards))
+                counter = 0
                 break
             
             if rewards == 475:
                 print('Episode {} succeed, total rewards {}'.format(i_episode, t+1, rewards))
+                counter += 1
                 break
          
     print(q_table)

@@ -127,6 +127,7 @@ class CartPoleEnv_CSC3180(gym.Env[np.ndarray, Union[int, np.ndarray]]):
         self.state = None
 
         self.steps_beyond_terminated = None
+        self.i_episode = 0
 
     def step(self, action):
         assert self.action_space.contains(
@@ -211,6 +212,8 @@ class CartPoleEnv_CSC3180(gym.Env[np.ndarray, Union[int, np.ndarray]]):
     def render(self):
         param1 = 'pole length = ' + str(self.length)
         param2 = 'pole mass = ' + str(self.masspole)
+        param3 = 'episode = ' + str(self.i_episode)
+        
         if self.render_mode is None:
             assert self.spec is not None
             gym.logger.warn(
@@ -302,19 +305,21 @@ class CartPoleEnv_CSC3180(gym.Env[np.ndarray, Union[int, np.ndarray]]):
         # on which text is drawn on it.
         text1 = font.render(param1, True, (0,0,0))
         text2 = font.render(param2, True, (0,0,0))
-        
+        text3 = font.render(param3, True, (0,0,0))
         # create a rectangular object for the
         # text surface object
         textRect1 = text1.get_rect()
         textRect2 = text2.get_rect()
+        textRect3 = text3.get_rect()
         
         # set the center of the rectangular object.
-        textRect1.center = (self.screen_width // 4, self.screen_height // 8)
-        textRect2.center = (self.screen_width // 4, self.screen_height // 4)
+        textRect1.top = 20
+        textRect2.top = 40
         self.surf = pygame.transform.flip(self.surf, False, True)
         self.screen.blit(self.surf, (0, 0))
         self.screen.blit(text1, textRect1)
         self.screen.blit(text2, textRect2)
+        self.screen.blit(text3, textRect3)
         if self.render_mode == "human":
             pygame.event.pump()
             self.clock.tick(self.metadata["render_fps"])
@@ -340,6 +345,9 @@ class CartPoleEnv_CSC3180(gym.Env[np.ndarray, Union[int, np.ndarray]]):
     def change_poleMass(self, newMasspole):
         self.masspole = newMasspole
         self.polemass_length = self.masspole * self.length
+        
+    def set_i_episode(self, i_episode):
+        self.i_episode = i_episode
 
 
 class CartPoleVectorEnv(VectorEnv):
