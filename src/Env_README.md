@@ -3,7 +3,8 @@
 * `self.masspole`: the mass of the pole
 
 # Render
-Once you change `self.length`, the screen will show it autometically.
+Once you change `self.length`, the screen will show it autometically.    
+The rendered texts are defined at the head of `render()`. Currently the screen shows `self.masspole` and `self.length`. If you want to show more parameters, you can modify those texts.
 
 # Code Usage
 Replace the original `cartpole.py` in the `gym` module with this modified one.    
