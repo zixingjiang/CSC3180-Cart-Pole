@@ -332,3 +332,11 @@ class CartPoleEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
             pygame.display.quit()
             pygame.quit()
             self.isopen = False
+
+    def change_poleLength(self, newLength):
+        self.length = newLength
+        self.polemass_length = self.masspole * self.length
+    
+    def change_poleMass(self, newMasspole):
+        self.masspole = newMasspole
+        self.polemass_length = self.masspole * self.length
