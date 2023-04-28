@@ -1,6 +1,6 @@
 # Key Variables:
-* self.length: the length of the pole
-* self.masspole: the mass of the pole
+* `self.length`: the length of the pole
+* `self.masspole`: the mass of the pole
 
 # Render
 Once you change `self.length`, the screen will show it autometically.
@@ -15,3 +15,4 @@ Then execute
 ```
   /bin/python3 get_started.py
 ```
+to see the gif
