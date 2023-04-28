@@ -1,6 +1,7 @@
 '''
 cart-pole problem solved by Q-learning
 '''
+import csc3180_cartpole_env
 import gymnasium as gym
 import numpy as np
 import math
@@ -29,7 +30,7 @@ def get_state(observation, n_buckets, state_bounds):
     return tuple(state)
 
 if __name__ == '__main__':
-    env = gym.make('CartPole-v1', render_mode='human')
+    env = gym.make('csc3180/CartPole_v1', render_mode='human')
     n_buckets = (1, 1, 6, 3) 
     n_actions = env.action_space.n
     state_bounds = list(zip(env.observation_space.low, env.observation_space.high))
