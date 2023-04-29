@@ -136,7 +136,7 @@ In order to learn an optimal Q-table, we want our algorithm to explore all possi
 \If{$i \le \varepsilon$}
 \State Take random action $\boldsymbol{a}$
 \Else
-\State Selection action $\boldsymbol{a}$ according to Q-Table \Comment{Equation \eqref{eq:action-selection}}
+\State Select action $\boldsymbol{a}$ according to the Q-Table \Comment{Equation \eqref{eq:action-selection}}
 \EndIf
 \State Update Q-Table entry for $(\boldsymbol{s}, \boldsymbol{a})$ according to the received reward $r(\boldsymbol{s}, \boldsymbol{a})$ \Comment{Equation \eqref{eq:bellman}}
 \EndWhile
