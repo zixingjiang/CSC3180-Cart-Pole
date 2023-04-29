@@ -101,7 +101,7 @@ In the Q-Learning process, the agent updates the Q-Table as it explores the envi
 \end{equation}
 This way, the agent learns to act optimally over time.
 
-In our scenario, the state vector $\boldsymbol{s}$ of the cart-pole system is continuous. In order to prevent infinitely many state-action pairs, we discretized the system's state space by intervals. The length of each interval is fine-tuned to ensure the effectiveness of learning. 
+In our scenario, the state vector $\boldsymbol{s}$ of the cart-pole system is continuous. In order to prevent infinitely many state-action pairs, we discretized the system's state space by intervals. The length of each interval is fine-tuned to ensure the effectiveness of learning. Plus, since the Q-Table is keeping updating during the algorithm runtime, it is adaptive to dynamic environment parameters. Therefore the stabilization controller built with Q-Learning is capable of adapting to varying rider weights and CoMs.
 
 \begin{table}
 \centering
@@ -140,6 +140,7 @@ In order to learn an optimal Q-table, we want our algorithm to explore all possi
 \EndIf
 \State Update Q-Table entry for $(\boldsymbol{s}, \boldsymbol{a})$ according to the received reward $r(\boldsymbol{s}, \boldsymbol{a})$ \Comment{Equation \eqref{eq:bellman}}
 \EndWhile
+
 \end{algorithmic}
 \end{algorithm}
 
