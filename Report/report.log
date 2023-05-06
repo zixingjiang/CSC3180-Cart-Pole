@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.2)  29 APR 2023 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.2)  6 MAY 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,41 +685,143 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip62
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count339
+\lst@gtempboxa=\box67
+\lst@token=\toks40
+\lst@length=\count340
+\lst@currlwidth=\dimen316
+\lst@column=\count341
+\lst@pos=\count342
+\lst@lostspace=\dimen317
+\lst@width=\dimen318
+\lst@newlines=\count343
+\lst@lineno=\count344
+\lst@maxwidth=\dimen319
+
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count345
+\lst@skipnumbers=\count346
+\lst@framebox=\box68
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count347
+\mult@box=\box69
+\multicol@leftmargin=\dimen320
+\c@unbalance=\count348
+\c@collectmore=\count349
+\doublecol@number=\count350
+\multicoltolerance=\count351
+\multicolpretolerance=\count352
+\full@width=\dimen321
+\page@free=\dimen322
+\premulticols=\dimen323
+\postmulticols=\dimen324
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box70
+\last@line=\box71
+\maxbalancingoverflow=\dimen325
+\mult@rightbox=\box72
+\mult@grightbox=\box73
+\mult@firstbox=\box74
+\mult@gfirstbox=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\c@minrows=\count353
+\c@columnbadness=\count354
+\c@finalcolumnbadness=\count355
+\last@try=\dimen326
+\multicolovershoot=\dimen327
+\multicolundershoot=\dimen328
+\mult@nat@firstbox=\box112
+\colbreak@box=\box113
+\mc@col@check@num=\count356
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
-\scratchdimen=\dimen316
-\scratchbox=\box67
-\nofMPsegments=\count340
-\nofMParguments=\count341
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count342
-\MPscratchDim=\dimen317
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count357
+\scratchdimen=\dimen329
+\scratchbox=\box114
+\nofMPsegments=\count358
+\nofMParguments=\count359
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count360
+\MPscratchDim=\dimen330
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
+\everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -765,8 +867,9 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 62.
 (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -776,87 +879,126 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count363
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
-<figure/logo.png, id=27, 932.48375pt x 754.82pt>
+\c@lstlisting=\count364
+<figure/logo.png, id=67, 932.48375pt x 754.82pt>
 File: figure/logo.png Graphic file (type png)
 <use figure/logo.png>
-Package pdftex.def Info: figure/logo.png  used on input line 36.
+Package pdftex.def Info: figure/logo.png  used on input line 71.
 (pdftex.def)             Requested size: 59.74562pt x 48.36958pt.
-<figure/scooter.png, id=31, 282.45525pt x 417.9615pt>
-File: figure/scooter.png Graphic file (type png)
-<use figure/scooter.png>
-Package pdftex.def Info: figure/scooter.png  used on input line 52.
-(pdftex.def)             Requested size: 72.55527pt x 107.36002pt.
-<figure/cart-pole.png, id=32, 186.6975pt x 171.039pt>
-File: figure/cart-pole.png Graphic file (type png)
-<use figure/cart-pole.png>
-Package pdftex.def Info: figure/cart-pole.png  used on input line 59.
-(pdftex.def)             Requested size: 123.34483pt x 112.9983pt.
-<figure/open-ai.png, id=33, 449.88075pt x 301.125pt>
-File: figure/open-ai.png Graphic file (type png)
-<use figure/open-ai.png>
-Package pdftex.def Info: figure/open-ai.png  used on input line 66.
-(pdftex.def)             Requested size: 145.11053pt x 97.12929pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<figure/scooter.png, id=76, 282.45525pt x 417.9615pt>
+File: figure/scooter.png Graphic file (type png)
+<use figure/scooter.png>
+Package pdftex.def Info: figure/scooter.png  used on input line 91.
+(pdftex.def)             Requested size: 72.55527pt x 107.36002pt.
+<figure/cart-pole.png, id=77, 186.6975pt x 171.039pt>
+File: figure/cart-pole.png Graphic file (type png)
+<use figure/cart-pole.png>
+Package pdftex.def Info: figure/cart-pole.png  used on input line 98.
+(pdftex.def)             Requested size: 123.34483pt x 112.9983pt.
+<figure/open-ai.png, id=78, 449.88075pt x 301.125pt>
+File: figure/open-ai.png Graphic file (type png)
+<use figure/open-ai.png>
+Package pdftex.def Info: figure/open-ai.png  used on input line 105.
+(pdftex.def)             Requested size: 145.11053pt x 97.12929pt.
+ [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figure/logo.p
 ng> <./figure/scooter.png (PNG copy)> <./figure/cart-pole.png (PNG copy)> <./fi
 gure/open-ai.png (PNG copy)>]
+
+pdfTeX warning: pdflatex.exe (file ./figure/success.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<figure/success.pdf, id=107, 2643.8775pt x 772.20496pt>
+File: figure/success.pdf Graphic file (type pdf)
+<use figure/success.pdf>
+Package pdftex.def Info: figure/success.pdf  used on input line 145.
+(pdftex.def)             Requested size: 483.69687pt x 141.26498pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./figure/fail.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<figure/fail.pdf, id=108, 2643.8775pt x 772.20496pt>
+File: figure/fail.pdf Graphic file (type pdf)
+<use figure/fail.pdf>
+Package pdftex.def Info: figure/fail.pdf  used on input line 152.
+(pdftex.def)             Requested size: 483.69687pt x 141.26498pt.
+<figure/rl.jpg, id=110, 475.7775pt x 459.7175pt>
+File: figure/rl.jpg Graphic file (type jpg)
+<use figure/rl.jpg>
+Package pdftex.def Info: figure/rl.jpg  used on input line 179.
+(pdftex.def)             Requested size: 145.11053pt x 140.21011pt.
+[2 <./figure/success.pdf> <./figure/fail.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figure/fail.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] [3 <./figure/rl.jpg>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 131.
- [2] [3] (./report.aux)
+put line 246.
+ [4]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 285.
+ [5] [6] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D5B3F4E817114141B65709D6B2CFC0E2;730.
+(rerunfilecheck)             Checksum: EEDCE27F3929A25B4C6DDD50D5A57CC8;2594.
  ) 
 Here is how much of TeX's memory you used:
- 22219 strings out of 478268
- 425817 string characters out of 5850346
- 700194 words of memory out of 5000000
- 40057 multiletter control sequences out of 15000+600000
- 480636 words of font info for 54 fonts, out of 8000000 for 9000
+ 24081 strings out of 478268
+ 452738 string characters out of 5850346
+ 1007843 words of memory out of 5000000
+ 41827 multiletter control sequences out of 15000+600000
+ 489721 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,16n,80p,1087b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb><c:/texlive/
-2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfo
-nts/cmextra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texm
-f-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
-ublic/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1
-000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (3 pages, 424434 bytes).
+ 76i,16n,80p,953b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb><c:/texlive/2022/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmext
+ra/cmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-s
+uper/sfbx0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1
+000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c
+:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2022/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm12
+00.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on report.pdf (6 pages, 3129965 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
