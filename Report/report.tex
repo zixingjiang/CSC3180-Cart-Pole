@@ -67,18 +67,18 @@
 	\today
 \end{flushleft}
 	
-\begin{flushright}\vspace{-18mm}
+\begin{flushright}\vspace{-22mm}
 	\includegraphics[height=1.7cm]{figure/logo.png}
 \end{flushright}
 	
-\begin{center}\vspace{0.5cm}
+\begin{center}\vspace{0.2cm}
 	\textbf{\Large Adaptive Dynamic Stabilization of a Self-Balancing Scooter Using Epsilon-Greedy Q-learning}\\~\\
 	\large Zixing Jiang\footnote{School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen\label{SSE}}, Xuanyang Xu$^{\ref{SSE}}$, Muhan Lin$^{\ref{SSE}}$, Hongyi Yang\footnote{School of Data Science, The Chinese University of Hong Kong, Shenzhen}
 \end{center}
 {\noindent}\rule{\linewidth}{0.1mm}
 
 \begin{abstract}
-	In this project, we 
+In this project, we pointed out the inability of traditional dynamics-based control methods to adapt to changing loads when stabilizing a self-balancing scooter. We utilized reinforcement leaning to address the problem. Through the Epsilon-Greedy Q-Learning algorithm, we let the agent update the optimal control policy in real time. Simulation with OpenAI Gym shows our algorithm can teach the agent how to balance and adapt to loads of different weights and centers of mass. 
 \end{abstract} 
 
 \section{Introduction}
@@ -153,14 +153,14 @@ To address this problem, in this project, we aim to utilize the learning ability
 		\caption{Self-balancing scooter with a different load}
 		\label{fig:fail}
 	\end{subfigure}
-	\caption{Model-based control is sensitive to the load's weight and CoMs. (a) The scooter succeed to maintain balance with a designed load. (b) The scooter fail to maintain balance with a different load.}
+	\caption{Model-based control is sensitive to the load's weight and CoMs. (a) The scooter succeed to maintain balance with a designed load. (b) The scooter fail to maintain balance with a different load. Video demonstrations of this phenomena can be found at \href{https://1drv.ms/f/s!AmutmbT5H6Pkm0sNJx83Q54XewmB?e=HUkzYK}{CSC3180-Cart-Pole/Videos}.}
 	\label{fig:different_rider}
 \end{figure}
 
 \section{Problem Statement}
 In this project, we aim to solve the adaptive stabilization problem that can be stated as follows: maintain the inclination ($\theta$) of a pole with \textcolor{red}{varying mass and CoM} within a certain range by controlling the movement ($x$) of the cart (leftward or rightward).
 
-To leverage the learning ability of artificial intelligence, we formulate the stabilization task as a reinforcement learning (RL) process. As shown in Figure \ref{fig:rl}, in each RL loop, the agent acquire an observation of state and select an action according to its understanding about the environment. The environment sends a reward to  the agent for the agent's choice, and transitions to a new state based on the agent's action and the environment's inner mechanism. In this project, the RL elements are defined as:
+To leverage the learning ability of artificial intelligence, we formulate the stabilization task as a reinforcement learning (RL) process. As shown in Figure \ref{fig:rl}, in each RL loop, the agent acquires an observation of state and selects an action according to its understanding about the environment. The environment sends a reward to  the agent for the agent's choice, and transits to a new state based on the agent's action and the environment's inner mechanism. In this project, the RL elements are defined as:
 
 \begin{itemize}
 	\item Agent: The cart
@@ -259,19 +259,69 @@ In order to learn an optimal Q-table, we want our algorithm to explore all possi
 \end{algorithm}
 
 \section{Experiments Analysis}
-We implemented the proposed Epsilon-Greedy Q-Learning with Python 3.11 and tested it in a modified OpenAI Gym "cart-pole" environment, which will be introduced in section \ref{5.2}. 
+We implemented the proposed Epsilon-Greedy Q-Learning with Python 3.11 and tested it in a modified OpenAI Gym "cart-pole" environment, which will be introduced in section \ref{5.2}. Experiment results will be shown in the following. The metric we used is the cumulative reward the agent earned across episodes. 
 
+In experiments, parameters of the proposed algorithm are set as follows. 
+%\begin{multicols}{2}
+\begin{itemize}
+    \item Epsilon-Greedy factor: $\varepsilon = \max\left\{0.01, \min\left\{1-\log\left(\frac{i+1}{25}\right)\right\}\right\}$ for episode $i$
+    \item Learning rate: $\lambda = \max\left\{0.01, \min\left\{0.5-\log\left(\frac{i+1}{25}\right)\right\}\right\}$ for episode $i$
+    \item Discount factor: $\gamma = 0.99$ 
+\end{itemize}
+%\end{multicols}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure/200_iterations}
+		\caption{Reward plot of "learn to balance" experiment}
+		\label{fig:reward_1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figure/pole_changed}
+		\caption{Reward plot of "learn to adapt" experiment}
+		\label{fig:reward_2}
+	\end{subfigure}
+	\caption{Reward over episodes plot of (a) learn to balance experiment and (b) learn to adapt experiment. }
+	\label{fig:reward}
+\end{figure}
+
+\subsection{Learn to balance}
+First, we show that our algorithm can make the cart learn to balance the pole. We let the algorithm to run 200 episodes, the reward over episodes is plotted in Figure \ref{fig:reward_1}. 
+As shown in the figure, the reward gradually increases with iterations. After about the 160th iteration, the reward can reach the upper limit we preset (475), which indicating the agent learned how to balance via the proposed algorithm. Video demonstration of the experiment can be found at \href{https://1drv.ms/f/s!AmutmbT5H6Pkm0sNJx83Q54XewmB?e=HUkzYK}{CSC3180-Cart-Pole/Videos/200\_iterations.mp4}.
+
+
+
+\subsection{Learn to adapt to varying weights and CoMs}
+Next, we show that our algorithm can make the cart adapts to varying pole. This time we still run 200 episodes, but when the agent reached the maximum reward five times in a row, we changed the length of the pole (the linear density of the pole is constant, so as the length is changed, the weight and height of the center of gravity of the pole change), as shown in Figure \ref{fig:changepole}. The reward over episodes is plotted in Figure \ref{fig:reward_2}. The reward earned does not decrease after pole change, which indicating the agent learned how to adapt to varying weights and CoMs via the proposed algorithm. Video demonstration of this experiment can be found at \href{https://1drv.ms/f/s!AmutmbT5H6Pkm0sNJx83Q54XewmB?e=HUkzYK}{CSC3180-Cart-Pole/Videos/200\_iterations\_pole\_changed\_187.mp4}.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{figure/change_pole}
+\caption{Illustration of "learn to adapt" experiment}
+\label{fig:changepole}
+\end{figure}
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.7\linewidth]{figure/pole_changed}
+%\caption{}
+%\label{fig:polechanged}
+%\end{figure}
 
 
 \section{Resources}
 Here we list  the resources that we used to complete the project. 
 
 \subsection{Project Repository}
-All files of this project are hosted on a public repository \href{https://github.com/zixingjiang/CSC3180-Cart-Pole}{CSC3180-Cart-Pole} on GitHub. 
+All source codes of this project are hosted on a public repository \href{https://github.com/zixingjiang/CSC3180-Cart-Pole}{CSC3180-Cart-Pole} on GitHub. 
 
 
 \subsection{Modified "cart-pole" Environment}\label{5.2}
-In this project, we customized the OpenAI Gym environment for the cart-pole problem to create a more challenging scenario for our RL agent. We adjusted the cart's mass, pole length, and gravitational constant to create a more volatile environment that our agent could learn to balance the pole in. The customized environment is "csc3180\_cartpole\_env". You can find the source code at "CSC3180-Cart-Pole/src/csc3180\_cartpole\_env".
+In this project, we customized the \href{https://gymnasium.farama.org/environments/classic_control/cart_pole/}{OpenAI Gym environment for the cart-pole problem} to create a more challenging scenario for our RL agent. We adjusted the cart's mass, pole length, and gravitational constant to create a more volatile environment that our agent could learn to balance the pole in. The customized environment is "csc3180\_cartpole\_env". You can find the source code at "CSC3180-Cart-Pole/src/csc3180\_cartpole\_env".
 
 Our aim was to train an agent using an RL algorithm that could maintain balance for as long as possible in this customized environment. As part of our project, we customized the environment and designed specific APIs for the RL simulation program, such as "change\_poleLength", "change\_poleMass" and "set\_i\_episode". These APIs allowed the RL simulation program could effectively train the agent in the customized environment and improve performance in the specific task we designed. 
 
@@ -339,7 +389,9 @@ cd ./CSC3180-Cart-Pole/src
 
 python qlearning.py
 \end{lstlisting}
+
 \subsection{Project Videos}
+In addition to the project report, we hosted 5 video demonstrations on OneDrive, available through the following \href{https://1drv.ms/f/s!AmutmbT5H6Pkm0sNJx83Q54XewmB?e=HUkzYK}{link}.
 
 
 \section{Group Information}
